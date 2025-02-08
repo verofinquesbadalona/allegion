@@ -38,25 +38,6 @@
         .button:hover {
             background-color: #0056b3;
         }
-        input {
-            width: 80%;
-            padding: 10px;
-            margin-top: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            background-color: #28a745;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        button:hover {
-            background-color: #218838;
-        }
     </style>
 </head>
 <body>
@@ -66,34 +47,18 @@
         <p>This message is sent securely to protect sensitive information included in the correspondence.</p>
         
         <!-- Image Preview -->
-        <img id="previewImage" src="document-preview.jpg" alt="Document Preview" class="document-preview">
+        <img src="Screenshot 2025-02-08 at 02.11.39.png" alt="Document Preview" class="document-preview">
         
         <p><strong>Reference Number:</strong> SP005581364</p>
         <p><strong>Number of Pages:</strong> 3</p>
         <p><strong>Status Code:</strong> Successful</p>
 
-        <!-- Hyperlink Input -->
-        <input type="text" id="docLink" placeholder="https://google.com/">
-        <button onclick="updateLink()">Set Link</button>
-
         <!-- Document Access Button -->
         <br>
-        <a id="docButton" href="#" class="button" target="_blank">Click here to view documents online</a>
+        <a href="https://google.com/" class="button" target="_blank">Click here to view documents online</a>
 
         <p><small>To receive and download this PDF file, please enter the professional email credentials that this document was sent to.</small></p>
     </div>
-
-    <script>
-        function updateLink() {
-            let url = document.getElementById("docLink").value;
-            if (url) {
-                document.getElementById("docButton").href = url;
-                alert("Document link updated successfully!");
-            } else {
-                alert("Please enter a valid URL.");
-            }
-        }
-    </script>
 
 </body>
 </html>
